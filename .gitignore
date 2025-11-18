@@ -1,0 +1,311 @@
+# ============================================
+# CRITICAL: NEVER COMMIT THESE FILES
+# ============================================
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+*.env
+
+# AWS Credentials
+*.pem
+*.key
+*.csv
+*credentials*.csv
+*accessKeys*.csv
+aws-credentials*
+.aws/
+
+# SSH Keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# ============================================
+# NODE.JS
+# ============================================
+
+# Dependencies
+node_modules/
+jspm_packages/
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# pnpm
+.pnpm-debug.log*
+
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ============================================
+# BUILD OUTPUTS
+# ============================================
+
+# Build directories
+dist/
+dist-ssr/
+build/
+out/
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+
+# Compiled files
+*.min.js
+*.min.css
+
+# ============================================
+# TESTING
+# ============================================
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Test reports
+test-results/
+test-report.html
+
+# Jest
+jest.config.local.js
+
+# ============================================
+# LOGS
+# ============================================
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# CACHING
+# ============================================
+
+# Cache directories
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+temp/
+tmp/
+
+# ESLint
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ============================================
+# DATABASES
+# ============================================
+
+# MongoDB local
+data/
+*.mongodb
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# IDEs and EDITORS
+# ============================================
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OPERATING SYSTEMS
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# DOCKER
+# ============================================
+
+# Docker local dev
+docker-compose.override.yml
+.dockerignore.local
+
+# ============================================
+# MISC
+# ============================================
+
+# Misc
+.vagrant/
+.grunt/
+bower_components/
+.lock-wscript
+lib-cov/
+.tox/
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Editor backups
+*.bak
+*.backup
+*.old
+*.orig
+
+# Credentials and secrets
+credentials/
+secrets/
+*secret*
+*password*
+*token*
+
+# Certificates
+*.cert
+*.crt
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================
+# PROJECT SPECIFIC
+# ============================================
+
+# Uploads directory (files should be in S3, not git)
+uploads/
+public/uploads/
+server/uploads/
+
+# Screenshots (may contain sensitive info)
+screenshots/
+
+# Local configuration
+config/local.js
+config/local.json
+
+# ============================================
+# ALLOWED FILES (exceptions)
+# ============================================
+
+# Keep example env files
+!.env.example
+!server/.env.example
+!client/.env.example
+
+# Keep README and docs
+!README.md
+!CONTRIBUTING.md
+!LICENSE
+
+# Keep GitHub workflows
+!.github/
+
+# Keep GitLab CI
+!.gitlab-ci.yml
