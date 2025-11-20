@@ -134,7 +134,6 @@ vite.config.ts.timestamp-*
 # ============================================
 
 # MongoDB local
-data/
 *.mongodb
 
 # SQLite
@@ -261,7 +260,6 @@ dmypy.json
 credentials/
 secrets/
 *secret*
-*password*
 *token*
 
 # Certificates
