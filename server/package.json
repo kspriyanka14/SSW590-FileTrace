@@ -1,0 +1,40 @@
+{
+  "name": "filetrace-backend",
+  "version": "1.0.0",
+  "description": "FileTrace backend API - Audit-First File Management Platform",
+  "type": "module",
+  "main": "server.js",
+  "author": "SSW 590 FileTrace Team",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.705.0",
+    "@aws-sdk/s3-request-presigner": "^3.705.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.0.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.11.0",
+    "multer": "^1.4.5-lts.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8",
+    "@vitest/ui": "^2.1.8",
+    "mongodb-memory-server": "^10.3.0",
+    "supertest": "^7.1.4",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
